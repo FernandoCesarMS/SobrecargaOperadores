@@ -21,5 +21,7 @@ Point Point::operator+(const Point &p){
 
 Point &Point::operator+=(const Point &p)
 {
-  // TODO: implement this operator.
+  this->x += p.getX();
+  this->y += p.getY();
+  return *this;
 }
