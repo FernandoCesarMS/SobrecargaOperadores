@@ -3,11 +3,14 @@
 #include "Point.h"
 
 std::ostream & operator << (std::ostream &out, const Point &p) {
-  // TODO: implement this operator.
+  out << "(" << p.getX() << ", " << p.getY() << ")";
+  return out;
 }
 
 std::istream & operator >> (std::istream &in,  Point &p) {
-  // TODO: implement this operator.
+  in >> p.x;
+  in >> p.y;
+  return in;
 }
 
 Point Point::operator + (const Point &p) {
